@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #222;
+    font-family: nyt-franklin,Arial,Helvetica,sans-serif;
+    line-height: 1;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.header_content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.title_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.title_content h1 {
+    font-family: nyt-cheltenham,Georgia,'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 45px;
+    padding-left: 10px;
+}
+
+.prep-portion {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+  
+}
+
+.header-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+    align-content: center;
+    margin: auto;
+    font-family: 'Abril Fatface';
+}
+
+.header-cards img,
+.span_title,
+.span_description {
+    margin: auto;
+}
+    
+.span_title {
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.span_description {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.header-img {
+    position: relative;
+    aspect-ratio: 3/2;
+    margin-bottom: 10px;
+}
+
+.header-img img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    color: transparent;
+    border-radius: 0 5px 5px 0;
+}
+
+.recipe-guide {
+    border-top: 5px solid black;
+    background: #fefae6;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.ingredients {
+    margin: 20px;
+}
+
+.checkbox {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 30px 0 0;
+    padding: 10px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.15);
+    border-radius: 5px;
+}
+
+/* Style the label to create the desired alignment */
+label {
+    padding: 8px 0;
+    display: flex; 
+    align-items: flex-start;
+    margin-bottom: 10px; 
+}
+
+/* Style the checkbox to not affect alignment */
+input[type="checkbox"] {
+    margin-top: 2px;
+    margin-right: 10px; 
+}
+
+.guide {
+    background-color: #ffec9ab5;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    align-content: space-between;
+}
+
+.recipe-guide h2 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+.steps {
+    margin: 10px 0 25px 0;
+    padding: 15px;
+    background-color: #ffff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.15);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Aguafina+Script');
+.steps h3{
+    font-family: "Aguafina Script", cursive;
+    font-size: 25px;
+    color: #bd8a00;
+}
+
+.steps p {
+    padding-top: 8px;
+    font-size: 13px;
+    line-height: 1.25;
+}
+
+/* Style for the Nutrition Facts table */
+.table_content {
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    width: 98%;
+    border: 2px solid #1b1a1a;
+    margin: 10px;
+}
+
+
+.table_content td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.nutrition-label {
+    width: 30%;
+}
+
+.nutrition-label .label-text {
+    font-size: 38px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nutrition-label .info-text {
+    font-size: 14px;
+    text-align: center;
+}
+
+.table-header {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header-text {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hr-line {
+    border: 0.3px solid #282727;
+    margin-right:;
+}
+
+.info-text {
+    font-size: 12px;
+    text-align: center;
+}
+
+.small-text {
+    font-size: 12px;
+} 
+
+/* Style for the nested tables */
+.nutrition-facts table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.nutrition-facts td {
+    padding: 1px 0;
+    border: none;
+}
+
+
+.nutrition-facts li {
+    font-size: 10px;
+}
+
+/* Style for the <hr> lines */
+.nutrition-facts hr {
+    margin: 4px 0;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}

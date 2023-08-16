@@ -1,30 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Chicken Parmigiana</h1>
-    <img src="../images/Chicken-Parmigiana.jpeg" alt="chicken Parmigiana">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chicken Parmigiana Recipe</title>
+    <link rel="stylesheet" href="chicken_perm.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="recipe_header">
+        <img src="/Images/chicken-parm.jpeg" alt="chicken Permigiana" />
+        <div class="recipe_table">
+          <h1>Baked Chicken Parmesan</h1>
+          <table class="fit-width">
+            <tbody>
+              <tr class="stats">
+                <td class="value">11</td>
+                <td class="value">55</td>
+                <td class="value">285</td>
+              </tr>
+              <tr class="stats">
+                <td class="label">Ingredients</td>
+                <td class="label">Minutes</td>
+                <td class="label">Calories</td>
+              </tr>
+              <tr class="separator">
+                <td colspan="3"></td>
+              </tr>
+              <tr class="stats">
+                <td class="label">Prep</td>
+                <td class="label">Cook</td>
+                <td class="label">Servings</td>
+              </tr>
+              <tr class="stats">
+                <td class="value">
+                  <meta
+                    property="prepTime"
+                    itemprop="prepTime"
+                    content="PT10M"
+                  />10 min
+                </td>
+                <td class="value">
+                  <meta
+                    property="cookTime"
+                    itemprop="cookTime"
+                    content="PT45M"
+                  />45 min
+                </td>
+                <td class="value">
+                  <span property="recipeYield" itemprop="recipeYield">6</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-    <h2>Description</h2>
-    <p> Chicken Parmigiana is a classic Italian-American dish that features breaded and fried chicken cutlets topped with marinara sauce and melted chees</p>
+      <div class="recipe_details">
+        <div class="ingredients">
+          <h2>Ingredients</h2>
+          <div class="ingredients_details">
+            <div class="ingredients_items">
+              <span class="measurement">1/2 cup</span>
+              <span class="description">Bread crumbs, whole wheat
+Parmesan cheese, grated</span>
+            </div>
+            <div class="ingredients_items">
+              <span class="measurement">1 tsp</span>
+              <span class="description">Italian herb seasoning, McCormick</span>
+            </div>
+            <div class="ingredients_items">
+              <span class="measurement">1/2 tsp</span>
+              <span class="description">Granulated garlic</span>
+            </div>
+            <div class="ingredients_items">
+              <span class="measurement">1/2 tsp</span>
+              <span class="description">Onion powder</span>
+            </div>
+            <div class="ingredients_items">
+              <span class="measurement">1/2 tsp</span>
+              <span class="description">Salt</span>
+            </div>
+            <div class="ingredients_items">
+              <span class="measurement">1/2 tsp</span>
+              <span class="description"> Black pepper</span>
+            </div>
+            <div class="ingredients_items">
+              <span class="measurement">1 tbsp</span>
+              <span class="description">Extra virgin olive oil</span>
+            </div>
+            <div class="ingredients_items">
+              <span class="measurement">908 gm</span>
+              <span class="description">Chicken breast cutlets</span>
+            </div>
+            <div class="ingredients_items">
+              <span class="measurement">3/4 cup</span>
+              <span class="description">Tomato sauce, canned</span>
+            </div>
+            <div class="ingredients_items">
+              <span class="measurement">3/4 cup</span>
+              <span class="description">Mozzarella cheese, shredded</span>
+            </div>
+          </div>
+        </div>
+        <div property="nutrition" class="nutrition-facts center-h">
+          <h2>Nutrition Facts</h2>
+          <h3>
+            <span class="float-left">Per Portion</span>
+            <span class="float-right"></span>
+          </h3>
+          <div class="thick-divider">    </div>
 
-    <h2>Ingredients</h2>
+          <div class="value-level-0">
+            <span class="label">Calories</span>
+            <span class="right-float" property="calories" itemprop="calories">
+                285
+            </span>
+          </div>
 
-    <ul>
-        <li>2 boneless, skinless chicken breasts</li>
-        <li>1 cup all-purpose flour</li>
-        <li>2 large eggs, beaten</li>
-        <li>1 cup breadcrumbs</li>
-        <li>1 cup marinara sauce</li>
-        <li>1 cup shredded mozzarella cheese</li>
-        <li>1/2 cup grated Parmesan cheese</li>
-        <li>2 tablespoons olive oil</li>
-        <li>Salt and pepper to taste</li>
-    </ul>
+          <div class="value-level-1">
+            <span class="label">Calories from fat</span>
+            <span class="right-float">91</span>
+          </div>
 
-</body>
+          <div class="value-level-1">
+            <span class="label">Calories from saturated fat</span>
+            <span class="right-float">29.2 </span>
+          </div>
+
+          <div class="thick-divider">   </div>
+
+          <div class="value-level-0">
+            <span class="label">Total Fat</span>
+            <span
+              class="right-float"
+              property="fatContent"
+              itemprop="fatContent"
+              >10.1 g</span
+            >
+          </div>
+
+          <div class="value-level-1">
+            <span class="label">Saturated Fat</span>
+            <span
+              class="right-float"
+              property="saturatedFatContent"
+              itemprop="saturatedFatContent"
+              >3.2 g</span
+            >
+          </div>
+
+          <div class="value-level-1">
+            <span class="label">Trans Fat</span>
+            <span
+              class="right-float"
+              property="transFatContent"
+              itemprop="transFatContent"
+              >0.1 g</span
+            >
+          </div>
+
+          <div class="value-level-1">
+            <span class="label">Polyunsaturated Fat</span>
+            <span class="right-float">1.2 g</span>
+          </div>
+
+          <div class="value-level-1">
+            <span class="label">Monounsaturated Fat</span>
+            <span class="right-float">3.6 g</span>
+          </div>
+
+          <div class="value-level-0">
+            <span class="label">Cholesterol</span>
+            <span
+              class="right-float"
+              property="cholesterolContent"
+              itemprop="cholesterolContent"
+              >122 mg</span
+            >
+          </div>
+
+          <div class="value-level-0">
+            <span class="label">Sodium</span>
+            <span
+              class="right-float"
+              property="sodiumContent"
+              itemprop="sodiumContent"
+              >628 mg</span
+            >
+          </div>
+
+          <div class="value-level-0">
+            <span class="label">Potassium</span>
+            <span class="right-float">642 mg</span>
+          </div>
+
+          <div class="value-level-0">
+            <span class="label">Total Carbohydrate</span>
+            <span
+              class="right-float"
+              property="carbohydrateContent"
+              itemprop="carbohydrateContent"
+              >9.3 g</span
+            >
+          </div>
+
+          <div class="value-level-1">
+            <span class="label">Dietary Fiber</span>
+            <span
+              class="right-float"
+              property="fiberContent"
+              itemprop="fiberContent"
+              >1.2 g</span
+            >
+          </div>
+
+          <div class="value-level-1">
+            <span class="label">Sugars</span>
+            <span
+              class="right-float"
+              property="sugarContent"
+              itemprop="sugarContent"
+              >1.6 g</span
+            >
+          </div>
+
+          <div class="value-level-0">
+            <span class="label">Protein</span>
+            <span
+              class="right-float"
+              property="proteinContent"
+              itemprop="proteinContent"
+              >40 g</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

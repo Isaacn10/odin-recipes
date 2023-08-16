@@ -1,17 +1,97 @@
+/* Set default styles for all elements */
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
+/* Center and align content vertically in the viewport */
 body {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    background-color: whitesmoke;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background: gainsboro;
 }
 
+/* Create a flex container for cards, allowing them to wrap */
 .container {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap when screen size changes */
+  justify-content: center;
+}
+
+/* Define the card layout */
+.cards {
+  position: relative; /* Set cards to relative position */
+  height: 500px;
+  margin: 50px;
+  background: #2a2438;
+  box-shadow: 5px 5px 20px black;
+}
+
+/* Set styling for images within cards */
+img {
+  height: 500px;
+  width: 350px;
+  border-radius: 3px;
+}
+
+/* Style for the overlay detail on the card */
+.detail {
+  padding: 10px;
+  height: 60px;
+  width: 350px;
+  box-sizing: border-box;
+  background: rgb(27, 27, 27, 0.5);
+  bottom: 0; /* Position at the bottom of the card */
+  color: white;
+  transition: 0.5s;
+  position: absolute; /* Position absolutely within the card */
+  border-radius: 10px;
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Style for the heading within the overlay detail */
+.detail h1 {
+  font-size: 25px;
+}
+
+/* Styling for links within the overlay detail */
+.detail a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Style for paragraphs within the overlay detail */
+.detail p {
+  padding: 10px 0;
+  visibility: hidden; /* Hide the content initially */
+  font-size: 18px;
+  opacity: 0; /* Start with zero opacity */
+}
+
+/* Change cursor to pointer on card hover */
+.cards:hover {
+  cursor: pointer;
+}
+
+/* Animation on card hover to reveal the detail */
+.cards:hover .detail {
+  height: 140px;
+  width: 350px;
+  background: #000000b8;
+  border-radius: 10px;
+}
+
+/* Show paragraph content on card hover */
+.cards:hover p {
+  visibility: visible;
+  opacity: 1; /* Show the content */
+}
+
+/* Apply a slight rotation and scaling on hover */
+.cards:hover img,
+.cards:hover .detail {
+  transform: scale(1, 1) rotate(-0.7deg);
 }

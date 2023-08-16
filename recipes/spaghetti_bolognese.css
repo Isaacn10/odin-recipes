@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Abril Fatface';
+    background-color: #d6d6d6;
+    color: #323232;
+    line-height: 1.5;
+    position: relative;
+    height: 100vh;
+  }
+  
+  .container {
+      display: flex;
+      flex-direction: column;
+      width: 700px;
+      margin: 5px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.382);
+      justify-content: center;
+      text-align: center;
+      background: white;
+      
+  }
+  .header_detail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+  
+  .title {
+      margin: 10px 0;
+      border-bottom: black;
+      font-size: 25px;
+      background-color: #ece119;
+      background-image: linear-gradient(45deg, #fcf006, #fc0202);
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      -moz-text-fill-color: transparent;
+  }
+  
+  .instructions,
+  .nutritions {
+      font-style: italic;
+  }
+  
+  .instructions {
+      display: flex;
+      margin: 10px 0;
+  }
+  
+  .cards {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .cards_value {
+      display: flex;
+      align-items: center;
+  }
+  
+  .cards_value img {
+      margin: 0 5px 10px 0;
+  } 
+  .span_value {
+      font-weight: bold;
+      font-size: 40px;
+      font-style: normal;
+  }
+  
+  .nutritions_title {
+      background-color: #f3ec78;
+      background-image: linear-gradient(50deg, #f3ec78, #bc244f);
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      -moz-text-fill-color: transparent;
+  }
+  
+  .nutritions {
+      display: flex;
+      margin: 10px;
+  }
+  
+  .nutritions_title {
+      background-color: #ece119;
+      background-image: linear-gradient(45deg, #68fc06, #fc0202);
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      -moz-text-fill-color: transparent;
+  }
+  
+  .cards2 {
+      flex: 1;
+      border: 2px solid black;
+      margin: 0 5px;
+      background: rgba(27, 27, 27, 0.178);
+      border-radius: 5px;
+  }
+  
+  .cards2_title {
+      font-size: 17px;
+      color: rgb(255, 77, 0);
+  }
+  
+  .cards2_stat {
+      font-size: 13px;
+  }
+  
+  .cards2:nth-child(1) {
+      border: 3px solid #93e4c1;
+      box-shadow: 2px 2px 5px gray;
+  }
+  
+  .cards2:nth-child(2) {
+      border: 3px solid #f8f398;
+      box-shadow: 2px 2px 5px gray;
+  }
+  
+  .cards2:nth-child(3) {
+      border: 3px solid rgba(0, 0, 0, 0.636);
+      box-shadow: 2px 2px 5px gray;
+  }
+  
+  .cards2:nth-child(4) {
+      border: 3px solid #bbe4e9;
+      box-shadow: 2px 2px 5px gray;
+  }
+  
+  .cards2:nth-child(5) {
+      border: 3px solid #c3195d;
+      box-shadow: 2px 2px 5px gray;
+  }
+  
+  .cards2:nth-child(6) {
+      border: 3px solid #a2a8d3;
+      box-shadow: 2px 2px 5px gray;
+  }
+  
+  .cards2:nth-child(7) {
+      border: 3px solid #a55233;
+      box-shadow: 2px 2px 5px gray;
+  }
+  
+  footer {
+      text-align: center;
+      font-style: italic;
+  }
+  

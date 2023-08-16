@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.recipe_header {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-gap: 10px;
+  background-color: #f7f7f7;;
+}
+
+.recipe_details {
+    display: flex;
+    flex-direction: column;
+  }
+
+.recipe_table {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.recipe_table h1 {
+    font-family: nyt-cheltenham,Georgia,'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 30px;
+  
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.stats   {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+}
+
+td {
+    padding: 10px 0;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+
+td:last-of-type{
+    border-right: none;
+}
+
+
+.value {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.recipe_details {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 20px;
+}
+
+.ingredients {
+  margin: 20px;
+}
+
+.ingredients h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.ingredients_details {
+  padding: 10px;
+}
+
+.ingredients_items {
+  padding: 7px;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.measurement {
+  margin-right: 25px; /* Adjust this value as needed */
+  min-width: 90px; /* Set a minimum width to maintain spacing */
+}
+
+.description {
+  flex-grow: 1; /* Allow description to expand and start on the same line */
+}
+
+
+.nutrition-facts {
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+    height: 450px;
+    width: 400px;
+    border: 2px solid gray;
+}
+ 
+.nutrition-facts h2 {
+    font-weight: 100;
+    text-align: center;
+}
+
+.float-left {
+    font-weight: 350;
+}
+.thick-divider {
+    padding: 5px;
+    background: rgba(130, 118, 124, 0.3);
+}
+
+.value-level-1,
+.value-level-0 {
+    border-top: 1px solid rgba(130, 118, 124, 0.3);
+    margin:3.5px 0;
+}
+
+.value-level-0 .label {
+    font-weight: bold;
+}
+
+.value-level-1,
+.right-float {
+    font-weight: lighter;
+}
+
+.value-level-1 .label {
+    padding: 0 10px;
+    font-weight: lighter;
+}
+.right-float {
+    float: right;
+}
